@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Booking Form</title>
+  <style>
+  input {
+  display: block;
+  padding: 1%;
+  margin: 0%;
+}
+body{
+  font-size:120%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+  
+  </style>
+</head>
+<body>
+  <form action="db.php" method="POST">
+    <fieldset >
+      <legend>Personal Details</legend>
+      <label for="name">First Name:<input type="text" name="name" id="name" placeholder="Enter your First Name" 
+        pattern="[a-zA] {3, }" title="Please Enter more than two letters" required autofocus placeholder="First Name"> </label>
+      <label for="name">Second Name: <input type="text" name="second" id="second" placeholder="Enter your Second Name" 
+        pattern="[a-zA] {3, }" title="Please Enter more than two letters" required autofocus placeholder="Second Name" > </label>
+      <label></label>
+      <label for="email">Email: <input type="text" name="email" id="email" placeholder="Enter your Email" 
+        pattern="[a-zA-Z] {3, } @[a-zA-Z] {3, } [a-zA-Z]{2,}" title="Please Enter in a valid email address" required autofocus placeholder="Email" ></label>
+      <label></label>
+      <label for="phone">Phone:</label><input type="tel" name="phone" id="phone" required placeholder="Please enter in your phone number">
+      <label>County:</label><select name="county" required>
+          <option value=""></option>3
+        <option value="Kirinyaga">Kirinyaga</option>
+        <option value="Nyandarua">Nyandarua</option>
+        <option value="Kiambu">Kiambu</option>
+        <option value="Muranga">Muranga</option>
+        <option value="Nyeri">Nyeri</option>
+      </select>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Booking Details</legend>
+      <p class="info-text">Please describe your needs e.g. Type of Occasion, Venue of Occasion</p>
+      <br>
+      <div class="controls">
+        <textarea style="width:50%" name="comments" class="floatLabel" id="comments"></textarea>
+        </div>
+        <br>
+       <label for="date">Booking Date: </label> <input style="font-size:large;" type="date" id="arrive" class="floatLabel" name="arrive" 
+       value="<?php echo date('Y-m-d'); ?>">
+       <p>Do you have instruments?</p>
+       <input type="radio" name="instruments" value="yes"> YES<br>
+       <input type="radio" name="instruments" value="no"> NO<br>
+       
+      </fieldset>
+      <button type="submit" value="Submit" name="submit" class="col-5-10">Submit</button>
+  </form>
+  <style>
+      footer, a{
+       width: 100%;
+       height: auto;
+       text-align: center;
+       line-height: 50px;
+       color: limegreen;
+   }
+      </style>
+       <footer>
+           Copyright &copy;2019 &NonBreakingSpace;<a href="index.html">HOME |</a> &NonBreakingSpace;<a href="about.html">
+           About Us |</a> &NonBreakingSpace;<a href="audio.html">Audio |</a>
+           <a href="gallery.html">Gallery|</a> &NonBreakingSpace;<a href="book.html">Booking |</a> &NonBreakingSpace;<a href="contact.html">Contacts</a>
+       
+       </footer>
+</body>
+</html>

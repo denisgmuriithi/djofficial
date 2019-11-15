@@ -1,0 +1,40 @@
+h1 {
+    text-align: center;
+    background-color: ;
+  }
+  
+  #nav-bar {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+  }
+  
+  p {
+    font-size: 20px;
+    font-weight: none;
+    background-color: white;
+  }
+  
+  main {
+    text-align: center;
+    font-size: 20px;
+    background-color: white;
+  }
+  
+  @media (max-height: 200px) {
+    p {
+      font-size: 20px;
+    }
+  }
+  
+  #papers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  #bottom-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }

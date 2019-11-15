@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+    <title>contact</title>
+</head>
+<body>
+    <div class="container">
+
+        <form class="well form-horizontal" action="db.php" method="POST"  id="contact_form">
+   
+    
+    <!-- Form Name -->
+    <legend>Contact Us Today!</legend>
+    
+    <!-- Text input-->
+    <fieldset>
+    <div class="form-group">
+      <label class="col-md-4 control-label">First Name</label>  
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input  name="first" placeholder="First Name" class="form-control"  type="text">
+        </div>
+      </div>
+    </div>
+</fieldset>
+    <!-- Text input-->
+    <fieldset>
+    <div class="form-group">
+      <label class="col-md-4 control-label" >Last Name</label> 
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input name="last" placeholder="Last Name" class="form-control"  type="text">
+        </div>
+      </div>
+    </div>
+</fieldset>
+    <!-- Text input-->
+    <fieldset>
+           <div class="form-group">
+      <label class="col-md-4 control-label">E-Mail</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+      <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+        </div>
+      </div>
+    </div>
+</fieldset>
+    
+    <!-- Text input-->
+    <fieldset>   
+    <div class="form-group">
+      <label class="col-md-4 control-label">Phone</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+      <input name="phone" placeholder="phone" class="form-control" type="text">
+        </div>
+      </div>
+    </div>
+    </fieldset>
+    <!-- Text input-->
+    <fieldset> 
+    <div class="form-group">
+      <label class="col-md-4 control-label">Address</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+      <input name="address" placeholder="Address" class="form-control" type="text">
+        </div>
+      </div>
+    </div>
+</fieldset>
+    <!-- Text input-->
+    <fieldset>
+    <div class="form-group">
+      <label class="col-md-4 control-label">City</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+      <input name="city" placeholder="city" class="form-control"  type="text">
+        </div>
+      </div>
+    </div>
+</fieldset>
+    <!-- Select Basic -->
+       
+
+    <!-- Text input-->
+    <fieldset>
+    <div class="form-group">
+      <label class="col-md-4 control-label">Zip Code</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+      <input name="zip" placeholder="Zip Code" class="form-control"  type="text">
+        </div>
+    </div>
+    </div>
+</fieldset>
+    <!-- Text input-->
+    <fieldset>
+    <div class="form-group">
+      <label class="col-md-4 control-label">Name of Institution</label>  
+       <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+      <input name="Institution" placeholder="Institution" class="form-control" type="text">
+        </div>
+      </div>
+    </div>
+</fieldset>
+    <!-- radio checks -->
+    <fieldset>
+     <div class="form-group">
+                            <label class="col-md-4 control-label">Do you have Instruments?</label>
+                            <div class="col-md-4">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="hosting" value="yes" /> Yes
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="hosting" value="no" /> No
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+    <!-- Text area -->
+    <fieldset>  
+    <div class="form-group">
+      <label class="col-md-4 control-label">Occasion Description</label>
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                <textarea class="form-control" name="comment" placeholder="Occasion Description"></textarea>
+      </div>
+      </div>
+    </div>
+    
+</fieldset>
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label"></label>
+      <div class="col-md-4">
+        <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+      </div>
+    </div>
+    
+    </fieldset>
+    </form>
+    </div>
+        </div><!-- /.container -->
+        
+       <style>
+       footer, a{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        line-height: 50px;
+        color: limegreen;
+    }
+       </style>
+        <footer>
+            Copyright &copy;2019 &NonBreakingSpace;<a href="index.html">HOME |</a> &NonBreakingSpace;<a href="about.html.html">
+            About Us |</a> &NonBreakingSpace;<a href="audio.html">Audio |</a>
+            <a href="gallery.html">Gallery|</a> &NonBreakingSpace;<a href="book.html">Booking |</a> &NonBreakingSpace;<a href="contact.html">Contacts</a>
+        
+        </footer>
+</body>
+</html>
